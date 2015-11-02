@@ -145,10 +145,10 @@ class tbLoadSaveWeights_UI(object):
         if str(self.skinClusterComboBox.currentText()) == "No skinCluster found":
             self.skinClusterTransformLineEdit.setText("No skinned mesh found")
 
-        transformNode = cmds.listConnections(skinCluster, type='shape')
-
-        if len(transformNode):
-            self.skinClusterTransformLineEdit.setText(transformNode[0])
+        else:
+            transformNode = cmds.listConnections(skinCluster, type='shape')
+            if len(transformNode):
+                self.skinClusterTransformLineEdit.setText(transformNode[0])
 
     def getSaveDirectory(self, *args):
         fileName = cmds.file(q=1, sceneName=1)
