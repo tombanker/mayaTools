@@ -36,3 +36,6 @@ psource( 'c:/Users/Tom/PycharmProjects/tbLoadSaveWeights/tbLoadSaveWeights_UI.py
 tbLoadSaveWeights_UI.tbLoadSaveWeights_UI()
 ```
 
+tbRibbon - written in 2013
+------------
+Launches a PySide UI from a Designer UI file and creates a Maya ribbon limb. Options for naming, number of joints, width, length ratio and additional fk controls. Centered control to place and addtional fk controls or nodes to constrain under a limb or spine setup.
