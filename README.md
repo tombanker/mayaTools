@@ -1,6 +1,10 @@
 Maya Tools repository
 =======================
 
+sceneSearch
+------------
+Search dag nodes within a Maya scene. UI filters results based on text input and updates treeView field. Used Model-View design pattern.
+
 tbLoadSaveWeights
 ------------
 Import and export Maya skinCluster weights to a .xml format. UI automatically fills fields based on skinCluster selection from a pulldown menu of available skinClusters in the scene. Additional option to export .xml using minidom instead of cElementTree for a more readable format.
